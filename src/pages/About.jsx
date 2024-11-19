@@ -10,7 +10,7 @@ const About = () => {
         finger, you'll unlock a treasure trove of enchanting drink recipes
         that'll make your taste buds dance and your friends jump with joy. Get
         ready to shake up your mixology game, one fantastical mocktail at a
-        time, and let the laughter and giggles flow!
+        time, and let the laughter and giggles flow! Hello World!
       </p>
     </Wrapper>
   );

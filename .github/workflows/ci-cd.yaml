@@ -1,7 +1,10 @@
-name: DevOps-GitHibActions
-on: push
+name: Build and Deploy to gh-pages
+on:
+  push:
+    branches:
+      - master
+
 jobs:
-  # Build Job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -15,26 +18,9 @@ jobs:
         run: npm install
       - name: Build Project
         run: npm run build
-      - name: Upload artifact to enable deployment
-        uses: actions/upload-artifact@v4
-        with:
-          name: production-files
-          path: ./dist
-
-  # Deploy Job
-  deploy:
-    # Add a dependency to the build job
-    needs: build
-    # Specify runner + deployment step
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: production-files
-          path: ./dist
-      - name: Deploy to GitHub Pages
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.ACTIONS }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: ./dist
