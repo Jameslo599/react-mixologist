@@ -35,18 +35,18 @@ const router = createBrowserRouter([
         element: <Landing />,
       },
       {
-        path: 'cocktail/:id',
+        path: '/react-mixologist/cocktail/:id',
         errorElement: <SinglePageError />,
         loader: singleCocktailLoader(queryClient),
         element: <Cocktail />,
       },
       {
-        path: 'newsletter',
+        path: '/react-mixologist/newsletter',
         element: <Newsletter />,
         action: newsletterAction,
       },
       {
-        path: 'about',
+        path: '/react-mixologist/about',
         element: <About />,
       },
     ],

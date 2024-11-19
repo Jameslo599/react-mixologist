@@ -5,17 +5,17 @@ const Navbar = () => {
   return (
     <Wrapper>
       <div className="nav-center">
-        <NavLink to="/" className="logo">
+        <NavLink to="/react-mixologist/" className="logo">
           MixMaster
         </NavLink>
         <div className="nav-links">
-          <NavLink to="/" className="nav-link">
+          <NavLink to="/react-mixologist/" className="nav-link">
             Home
           </NavLink>
-          <NavLink to="/about" className="nav-link">
+          <NavLink to="/react-mixologist/about" className="nav-link">
             About
           </NavLink>
-          <NavLink to="/newsletter" className="nav-link">
+          <NavLink to="/react-mixologist/newsletter" className="nav-link">
             Newsletter
           </NavLink>
         </div>

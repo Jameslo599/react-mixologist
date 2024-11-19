@@ -9,7 +9,7 @@ const CocktailCard = ({ id, name, img, alcoholic, glass }) => {
         <h4>{name}</h4>
         <h5>{alcoholic}</h5>
         <p>{glass}</p>
-        <Link to={`/cocktail/${id}`} className="btn">
+        <Link to={`/react-mixologist/cocktail/${id}`} className="btn">
           Details
         </Link>
       </div>

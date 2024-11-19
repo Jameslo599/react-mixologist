@@ -26,7 +26,7 @@ export const loader =
 const Cocktail = () => {
   const { id } = useLoaderData();
   const { data } = useQuery(singleCocktailQuery(id));
-  if (!data) return <Navigate to="/" />;
+  if (!data) return <Navigate to="/react-mixologist/" />;
 
   const singleDrink = data.drinks[0];
   const {
@@ -48,7 +48,7 @@ const Cocktail = () => {
   return (
     <Wrapper>
       <header>
-        <Link to="/" className="btn">
+        <Link to="/react-mixologist/" className="btn">
           back home
         </Link>
         <h3>{name}</h3>

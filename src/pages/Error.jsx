@@ -14,7 +14,7 @@ const Error = () => {
 
         <h3>Uh-oh!</h3>
         <p>We can't seem to find the page you're looking for</p>
-        <Link to={'/'}>Back Home</Link>
+        <Link to={'/react-mixologist/'}>Back Home</Link>
       </Wrapper>
     );
   } else
@@ -26,7 +26,7 @@ const Error = () => {
 
         <h3>Uh-oh!</h3>
         <p>Something went wrong!</p>
-        <Link to={'/'}>Back Home</Link>
+        <Link to={'/react-mixologist/'}>Back Home</Link>
       </Wrapper>
     );
 };
