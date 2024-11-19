@@ -24,7 +24,7 @@ const queryClient = new QueryClient({
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/react-mixologist/',
     element: <HomeLayout />,
     errorElement: <Error />,
     children: [
